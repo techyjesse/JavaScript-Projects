@@ -5,6 +5,8 @@ function Dictionary() {
         Color: "Black",
         Year: "2021",
     };
-    delete Vehicle.Year;
+    delete Vehicle.Model;
     document.getElementById("Dictionary").innerHTML=Vehicle.Model;
 }
+
+
