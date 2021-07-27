@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<Title>Gracefully Captured</Title>
+		<link rel="stylesheet" href="./CSS/one-page-website.css">
+		<link rel="stylesheet" href="CSS/lightbox.min.css">
+		<script src="js/lightbox-plus-jquery-min.js" defer></script>
+	</head>
+
+	<body>
+
+		<!-- NAV -->
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>RESERVATIONS</li></a>
+				</ul>			
+			</div>
+		</div>
+		<!--END NAV-->
+		
+		<!--HOME-->
+		<div id="home">
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">Gracefully Captured</span>
+				</div>
+			</div>
+		</div>
+		<!--END HOME-->
+
+		<!--GALLERY-->
+		<section id="gallery">
+			<h1>GALLERY</h1>
+			<div class="row">
+				<div class="column">
+				  <img src="Images/grace_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
+				<div class="column">
+				  <img src="Images/grace_2.png"openModal();currentSlide(2)" class="hover-shadow">
+				</div>
+				<div class="column">
+				  <img src="Images/grace_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				</div>
+				<div class="column">
+				  <img src="Images/grace_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+				</div>
+			  </div>
+			  
+			  <!-- The Modal/Lightbox -->
+			  <div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+			  
+				  <div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="Images/grace_1.png" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="Images/grace_2.png" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="Images/grace_3.png" style="width:100%">
+				  </div>
+			  
+				  <div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="Images/grace_4.png" style="width:100%">
+				  </div>
+			  
+				  <!-- Next/previous controls -->
+				  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			  
+				  <!-- Caption text -->
+				  <div class="caption-container">
+					<p id="caption"></p>
+				  </div>
+			  
+				  <!-- Thumbnail image controls -->
+				  <div class="column">
+					<img class="demo" src="Images/grace_1.png" onclick="currentSlide(1)" alt="Photo 1">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="Images/grace_2.png" onclick="currentSlide(2)" alt="Photo 2">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="Images/grace_3.png" onclick="currentSlide(3)" alt="Photo 3">
+				  </div>
+			  
+				  <div class="column">
+					<img class="demo" src="Images/grace_4.png" onclick="currentSlide(4)" alt="Photo 4">
+				  </div>
+				</div>
+			  </div>
+		<!--END GALLERY-->
+
+		<!--RSVP-->
+		<section id= "contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Reservation Inquiries</h1>
+					<div class="reservation">
+						<h2><span>“Taking an image, freezing a moment, reveals how rich reality truly is.”</br>
+							— Anonymous</span></br>
+						</br>Reserve your shoot today!
+						</h2>
+						<p class="rsvp-text">
+							Please provide us with your contact information.
+						</p>
+						<div class="form-rsvp">
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email Address">
+								<input class="rsvp" type="text" value="" placeholder="Phone Number">
+								<input class="rsvp" type="date" value="" placeholder="Date Requested">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
+								</div>
+								<div class="submit">
+									<input type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+		</section>
+		<!--END RSVP-->
+
+		<!--FOOTER-->
+		<div id="footer">
+			<p>&quot;<em>We take photographs as a return ticket to a moment otherwise gone.</em>&quot;<br>
+			www.gracefullycaptured.com &nbsp;|&nbsp; &copy; 2021
+		</div>
+		<!--END FOOTER-->
+
+
+	</body>
+
+</html>
