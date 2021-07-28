@@ -22,7 +22,7 @@
             //Step 3: define the ajax response callback method
             ajax.onreadystatechange = function() {
                 if (ajax.readyState = 4) {
-                    document.getElementById('content').innerHtml = ajax.responseText;
+                    document.getElementById('content').innerHTML = ajax.responseText;
                 }
             }
 
