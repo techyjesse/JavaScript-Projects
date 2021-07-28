@@ -12,6 +12,7 @@ $(document).ready(function() {
             <div id='container'>\
                 <div id='inner'>\
                     <h1>Basic jQuery</h1>\
+                    <h2>Let's learn some jQuery!</h2>\
                     <p id='1'>Paragraph 1</p>\
                     <p id='2'>Paragraph 2</p>\
                     <p id='3'>Paragraph 3</p>\
@@ -19,10 +20,18 @@ $(document).ready(function() {
             </div>\
         </body>"
     );
+    //Applies the color red to our p#2 element.
     $("#2").css({"color": "red"});
     $("#3").click(function() {
         $('h1').hide().fade();
     });
+    //Displays string in consol log when a paragraph is clicked.
+    $("p").click(function() {
+        console.log("You just cliked a paragraph.");
+    })
+    //Slowly hide all paragraphs
+    $("p").hide("slow");
+
 });
 </script>
 </body>
