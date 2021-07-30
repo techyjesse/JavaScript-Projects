@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <button id="XML_Example" onclick="Movie">Click this text to see a child node from one of our XML elements.</button>
+
+
+    <script>
+
+    var XML_Parset, XML_Document;
+
+    //creates a text string
+    var Movie= "<movie>" + 
+    "<title>The Shining</title>" +
+    "<director>Stanley Kubrik</director>" +
+    "<starring>Jack Nicholson</starring>" +
+    "<year>1980</year>"+
+    "</movie>" ;
+
+    //creates an XML DOM Parser
+    XML_PARSER = new DOMParser();
+
+    //Creates a new XML DOM object using the text string
+    XML_Document= XML_Parser.parseFromString(Movie,"text/xml");
+
+    document.getElementById("XML_Example").innerHTML=
+    XML_Document.getElementsByTagName("title")[0].childNodes[1].nodeValue;
+
+    </script>
+</body>
+
+</html>

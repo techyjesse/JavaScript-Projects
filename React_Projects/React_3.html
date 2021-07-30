@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scaled=1.0">      
+    </head>
+
+    <body>
+
+
+        <div id='JSX'></div>
+
+        <p style="font-size:2vw;">Resize the browser to see how this font size scales.</p>
+
+        <script type="text/babel">
+        class Greeting extends React.Component { //React.Component is used to specify a class of function
+            render() { //render is uesd to create a function in React
+                return <h1>Hello, World!</h1> //Returns information in h1 element
+            }
+        }
+
+        ReactDOM.render(<Greeting />, document.getElementById('JSX'))
+
+        </script>
+
+    </body>
+</html>

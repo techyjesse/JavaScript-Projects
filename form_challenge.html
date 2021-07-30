@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <style>
+        button {
+            background-color: blue;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            position:sticky;
+            bottom: 0;
+            right: 0;
+        }
+        </style>
+    </head>
+
+
+    <body>
+
+    <h2>User Information</h2>
+    <div class="form-popup" id="myForm">
+        <form name="myForm" id="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br>
+            <label for="email">Email:</label><br>
+            <input type="text" is="email" name="email" value=""><br>
+            <label for="phone">Phone Number:</label><br>
+            <input type="text" id="phone" name="phone" value=""><br>
+            <input type="submit" value="Submit">  
+        </form>
+    </div>
+
+    <p>Please submit your personal inforation in the above form.</p>
+    
+        <button class="sticky" id="myForm" onclick="myForm">Click to contact me!</button>
+    
+
+    <script>
+    function validateForm() {
+        let x = document.forms["myForm"]["fname", "lname", "email", "phone"].value;
+        if (x == "") {
+        alert("All fields must be filled in to proceed.");
+        return false;
+        }
+    }
+
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+
+    </body>
+</html>
