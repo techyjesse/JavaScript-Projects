@@ -3,9 +3,9 @@
  This repository will host various JavaScript projects. Below is a list of simple projects.
 
 <h2>Projects:<h2>
-- [Pizza Menu](https://github.com/techyjesse/JavaScript-Projects/tree/main/Pizza_Project)<br>
-- [Tic Tac Toe Game](https://github.com/techyjesse/JavaScript-Projects/tree/main/TicTacToe)<br>
-- [Basic Functioning Calculator](https://github.com/techyjesse/JavaScript-Projects/tree/main/Calculator)<br>
+[Pizza Menu](https://github.com/techyjesse/JavaScript-Projects/tree/main/Pizza_Project)<br>
+[Tic Tac Toe Game](https://github.com/techyjesse/JavaScript-Projects/tree/main/TicTacToe)<br>
+[Basic Functioning Calculator](https://github.com/techyjesse/JavaScript-Projects/tree/main/Calculator)<br>
  
  
  <h2>Pizza Menu<h2</h2><br>
