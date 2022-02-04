@@ -1,19 +1,36 @@
 html {
-    font-family: "Avenir Next", Arial, Helvetica, sans-serif;
+    font-family: "Tangerine", serif;
     text-align: center;
 }
 
-body {
-    max-width: 500px;
-    margin: 0 auto;
+.navbar {
+    font-family: 'Tangerine', serif;
+    font-size: 18px;
+    text-shadow: 4px 4px 4px #aaa;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
 }
+
+
+
+body {
+    background-image: url("/img/blackboard.jpg");
+    max-width: 100%;
+}
+
 
 
 input {
     padding-top: 30px;
-    width: 500px;
-    height: 60px;
-    font-size: 40px;
+    width: 700px;
+    height: 150px;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px #aaa;
+    color: black;
     background-color: lightblue;
     border: 0;
     text-align: center;
@@ -23,9 +40,21 @@ input {
         outline: none;
     }
 
+#task {
+    border: 3px solid black;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 30px;
+}
+
+#add {
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+    max-width: 100px;
+}
+
 li {
-    text-align: left;
-    font-size: 40px;
+    text-align: block;
+    font-size: 30px;
     list-style: none;
     margin: 0;
 }
@@ -43,5 +72,14 @@ li {
 }
 
 .remove {
-    padding-bottom: 5px;
+    padding: 10px;
+}
+
+#todos {
+    display: block;
+    padding-right: 10px;
+}
+
+#remove {
+    margin-left: 10px;
 }

@@ -1,5 +1,6 @@
 var X=50
 function subFunction() {
+    document.getElementById("subtraction").innerHTML="X - 15 = "
     document.write(X - 15 + "<br>");
 }
 function addFunction() {
